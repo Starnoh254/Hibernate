@@ -12,15 +12,15 @@ public class Main {
         s1.setSname("Mark");
         s1.setMarks(367L);
 
-        s3.setSid(9L);
-        s3.setSname("Agwambo");
-        s3.setMarks(432L);
+        s3.setSid(12L);
+        s3.setSname("Anyika");
+        s3.setMarks(490L);
 
         studentDao.saveStudent(s1);
         Student s2 = studentDao.getStudent(9L);
         System.out.println(s2);
-//        studentDao.updateStudent(s3);
-        studentDao.deleteStudent(9L);
+        studentDao.updateStudent(s3);
+//        studentDao.deleteStudent(9L);
 
     }
 }
